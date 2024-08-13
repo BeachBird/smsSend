@@ -3,7 +3,7 @@
 IncludeModuleLangFile(__FILE__);
 $module_id = "company.send_sms"; 
 
-class smsSend {
+class send_sms {
 
 	protected $host = 'http://x.x.x.x/send_sms.php';
     protected $login = null;
