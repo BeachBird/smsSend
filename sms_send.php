@@ -1,12 +1,11 @@
 <?php
-
 IncludeModuleLangFile(__FILE__);
 $module_id = "company.send_sms"; 
 
 class company_send_sms {
 
 	protected $host = 'http://x.x.x.x/send_sms.php';
-    protected $login = null;
+   	protected $login = null;
 	protected $password = null;
 	protected $sender = null;
 	protected $proxyURL = null;
@@ -33,7 +32,7 @@ class company_send_sms {
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 			curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 30);
 			curl_setopt($ch, CURLOPT_POST, 1);
-	        curl_setopt($ch, CURLOPT_POSTFIELDS, $arDataJson);
+	        	curl_setopt($ch, CURLOPT_POSTFIELDS, $arDataJson);
 			
 			$answer = curl_exec($ch);
 			curl_close($ch);
