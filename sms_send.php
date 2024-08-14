@@ -1,6 +1,6 @@
 <?php
 IncludeModuleLangFile(__FILE__);
-$module_id = "company.send_sms"; 
+$module_id = "company.sendsms"; 
 
 class Send_sms {
 
